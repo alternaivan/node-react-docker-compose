@@ -7,4 +7,4 @@ logLevel = "INFO"
 
 [entryPoints]
   [entryPoints.http]
-  address = ":80"
+  address = ":8081"
