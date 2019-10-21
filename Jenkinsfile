@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Testing Deployment') {
             steps {
-                sh label: '', script: 'curl -s -o /dev/null -w "%{http_code}" http://marjanko2c.mylabserver.com:8080'
+                sh label: '', script: 'curl -s -o /dev/null -w "%{http_code}" http://localhost:8080'
             }
             post('Restore working version from Master branch') {
                 failure {
